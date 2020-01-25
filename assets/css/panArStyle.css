@@ -1,0 +1,474 @@
+/*  
+    Colors :  brown #e17055
+*/
+
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font: normal 100% Cairo, sans-serif, serif;
+    background-color: #fefefe;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+    text-rendering: optimizeLegibility;
+}
+
+/* LAYOUT */
+
+.grid::before,
+.grid::after {
+     display: table;
+     content: "";
+     clear: both;
+ }
+
+ .grid { border: 0 }
+
+[class^='row-'] {
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+
+[class^='row-']:last-child {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+}
+
+[class*='col-'] { float: left;  }
+
+.col-1-1 { width: 100%; }
+
+.col-1-2,
+.col-2-2 { width: 50%; }
+
+.col-1-4 { width: 25%; }
+
+
+
+
+
+
+/* ICONS */
+.logo ion-icon  { 
+    font-size: 40px;
+}
+
+.icon-fb-bx ion-icon { font-size: 20px; }
+
+.icon-call {
+    font-size: 25px;
+    vertical-align: middle;
+    color: #fefefe;
+}
+
+.icon-checkmark {
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 5px 0 0;
+    color: #e17055;
+}
+
+.icon-arrow-down {
+    font-size: 15px;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+    color: #fefefe;
+}
+
+.icon-time {
+    font-size: 16px;
+    color: #fefefe;
+}
+
+.ion-md-close { margin: 0 0 0 30px; }
+
+.icon-menu:link,
+.icon-menu:visited {
+    display: none;
+    margin: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fefefe;
+}
+
+.icon-facebook {
+    font-size: 25px;
+    vertical-align: middle;
+    transition: .2s;
+}
+
+.icon-facebook:hover { color: #4267B2; }
+
+
+
+
+
+
+/* HEADINGS */
+h1 {
+    font-size: 10vz;
+    font-weight: 200;
+    color: #fefefe;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: rgba(34, 34, 34, 1);
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fefefe;
+    margin: 10px 0 0 0;
+}
+
+
+
+/* BUTTONS */
+
+.text-bx a:link,
+.text-bx a:visited {
+    text-decoration: none;
+    color: #fefefe;
+    padding: 10px 30px;
+    /* border: 1px solid #e17055; */
+    border-radius: 3px;
+    display: block;
+    margin: 40px 0 0 0;
+    background-color: #e17055;
+}
+
+.text-bx a:hover,
+.text-bx a:active {
+    text-decoration: none;
+    color: #fefefe;
+    padding: 10px 30px;
+    /* border: 1px solid transparent; */
+    border-radius: 3px;
+    display: block;
+    margin: 40px 0 0 0;
+    background-color: #CD664E;
+    transition: all .2s ease-in;
+}
+
+/* LOGO */  
+.logo-pic {
+    width: 100px;
+    display: block;
+    background-color: transparent;
+}
+
+.logo {
+    color: #fefefe;
+    font-size: 3.125em;
+    padding: 25px 40px 0 0;
+    display: block;
+}
+
+
+.top-mainbx {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, .349)) ,url(../img/road-sign.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* TOP BAR */
+.top-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    /* -webkit-box-shadow: 0px 15px 68px -38px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 15px 68px -38px rgba(0,0,0,0.48);
+    box-shadow: 0px 15px 68px -38px rgba(0,0,0,0.48); */
+}
+
+nav ul {
+    list-style: none;
+    float: left;
+    margin: 4em 0 0 6em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 1em;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fefefe;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color:  #e17055;
+    text-decoration: none;
+}
+
+.icon-menu:link,
+.icon-menu:visited {
+    display: none;
+    margin: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fefefe;
+    float: left;
+}
+
+.learn-bx {
+    margin: 2em 0 0em 0;
+}
+
+.text-bx {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    padding: 0 40px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-bx p {
+    margin: 20px 0;
+    width: 80%;
+    line-height: 1.5;
+    color: #fefefe;
+}
+
+.illus-bx { padding: 60px; }
+
+.illus-bx figure {
+    width: 100%;
+    margin: 60px 0 0 0; 
+}
+
+.illus-bx figure img {
+    width: 100%;
+    display: block;
+}
+
+/* .illus-bx figure {
+    height: 100%;
+    background-image: url(../svg/road-sign.svg);
+    background-position: center;
+    background-size: cover;
+    transform: scale(.8);
+} */
+
+
+/* ROAD SIGNS */
+.pan-bx {
+    background-color: #222;
+    height: 400px;
+    width: 500px;
+    transform: scale(.75);
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)) ,url(../img/k-mitch-hodge-nX40OjM83do-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.pan-bx div {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pan-bx figure { width: 100%; }
+
+.pan-bx figure img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #e17055;
+}
+
+.fb-bx {
+    float: left;
+    width: 33.33%;
+}
+
+.fb-bx a:link,
+.fb-bx a:visited { 
+    color: #fefefe;
+    margin: 0 0 0 10px;
+}
+
+.call-bx {
+    width: 33.33%;
+    text-align: center;
+    list-style: none;
+}
+
+.call-bx li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.number { color: #fefefe; }
+
+.lang-list {
+    text-align: right;
+    width: 33.33%;
+    list-style: none;
+}
+
+.lang-list li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+} 
+
+.lang-list li a:link,
+.lang-list li a:visited {
+    color: #fefefe;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.fren-ar  { opacity: .9; }
+
+::-webkit-scrollbar { display: none ; }
+
+
+/* FEATS */
+
+.road-feats {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.road-feats span { 
+    font-size: 19px;
+    opacity: .8;
+ }
+
+.ex-time {
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fefefe;
+    width: 100%;
+    margin: 2em auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 10px 67px -7px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 67px -7px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 67px -7px rgba(0,0,0,0.15);
+}
+
+.little-sticker {
+    width: 60px;
+    height: 20px;
+    border-radius: 4px;
+    border: 0;
+    background-color: #e17055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    color: #fefefe;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+ .sec-panns { 
+    
+}
+
+.time-bx {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 46px 0 0;
+}
+
+.time-bx span {
+    font-size: 11px;
+    margin: 0 5px 0 0;
+}
+
+.both-pics {
+   display: flex;
+   justify-content: center;
+   align-items: top;
+}   
+
+.inter-bx {
+    width: 33%;
+    margin:  10px;
+    float: left;
+    transition: all .3s;
+    border: 1px solid #e17055;
+    background-color: #EEEFF0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.sponsored {
+    width: 100%;
+    height: 400px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-1,
+.brand-2 {
+   width: 20%;
+   height: 100%;
+}

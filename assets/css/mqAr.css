@@ -1,0 +1,249 @@
+@media only screen and (max-width: 3120px) and (max-height: 1440px) {
+    .big-head {
+        position: absolute;
+        top: 43%;
+        left: 25%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+
+}
+
+@media only screen and (max-width: 3040px) and (max-height: 1440px) {
+    
+    .big-head {
+        position: absolute;
+        top: 43%;
+        left: 25%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 2960px) and (max-height: 1440px) {
+    
+    .big-head {
+        position: absolute;
+        top: 43%;
+        left: 17%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 2380px) and (max-height: 1080px) {
+    
+    .big-head {
+        position: absolute;
+        top: 43%;
+        left: 17%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+
+}
+
+@media only screen and (max-width: 2280px) and (max-height: 1080px) {
+    
+    .big-head {
+        position: absolute;
+        top: 43%;
+        left: 17%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 1520px) and (max-height: 720px) {
+    .big-head {
+        position: absolute;
+        top: 43%;
+        left: 17%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 1197px) {
+    .saturday-bx { padding: 0 0 0 106px; }
+    .friday-bx { padding: 0 0 0 100px; }
+}
+
+/* Tablet Landscape & greater  - Netbook */
+@media only screen and (max-width: 1024px) { 
+    .schedule-bx { margin: 0; }
+}
+
+@media only screen and (max-width: 916px) {
+    nav ul {
+        list-style: none;
+        float: left;
+        margin: 3.4em 0 0 6em;
+    }
+}
+
+@media only screen and (max-width: 847px) {
+    .head1bx { margin: 0 0 0 10em; }
+}
+
+/* Pixel 2 XL Landscape */
+@media only screen and (max-width: 823px) {
+    .friday-bx { padding: 0 0 0 100px ; }
+    .saturday-bx { padding: 0 0 0 108px ; }
+}
+
+@media only screen and (max-width: 814px) {
+    nav ul {
+        list-style: none;
+        float: left;
+        margin: 3em 0 0 6em;
+    }
+}
+
+
+/* Iphone X Landscape */
+@media only screen and (max-width: 812px) {}
+
+@media only screen and (max-width: 790px) {
+    .benefits-bx p {
+        text-align: center;
+        line-height: 7vh; 
+        font-size: 30px;
+        margin: 2em 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 783px) {
+    nav ul {
+        list-style: none;
+        float: left;
+        margin: 2.5em 0 0 6em;
+    }
+}
+
+/* Tablet Portrait */
+@media only screen and (max-width: 768px) {
+    
+    .head1bx { margin: 0 0 0 10em; }
+    
+    .featsbx {
+        width: 90%;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 671px) {
+    .friday-bx { padding: 0 0 0 60px; }
+    .saturday-bx { padding: 0 0 0 68px; }
+}
+
+@media only screen and (max-width: 570px) {
+    .head1bx { margin: 0 0 0 2em; }
+}
+
+@media only screen and (max-width: 566px) {
+    nav ul {
+        list-style: none;
+        float: left;
+        margin: 2em 0 0 6em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    nav ul {
+        list-style: none;
+        float: left;
+        margin: 30px 0 0 1em;
+    }
+}
+
+/* Galaxy S5 Landscape */
+@media only screen and (max-width: 480px)  {
+    
+    .big-bx {
+        width: 100%;
+        height: 150vh;
+        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/womendriving.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    nav ul {
+        display: block;
+        list-style: none;
+        float: left;
+        margin: 50px 0 0 6em;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        font-size: 1em;
+    }
+
+    nav ul li:first-child {
+        display: inline-block;
+        margin: 0;
+        font-size: 1em;
+    }
+    
+    .icon-menu:link,
+    .icon-menu:visited {
+        display: none;
+        padding: 20px 0 0 0;
+        font-size: 40px;
+        width: 20%;
+    }
+    
+    .logo:link, 
+    .logo:visited {
+        width: 30%;
+        color: #fefefe;
+        font-size: 3.125em;
+        margin: 0 auto;
+        display: block;
+        float: none;
+        transform: translateY(20px);
+    }
+    
+    .permispic { padding: 10em 0 0 0; }
+    
+    [class*="t-feat-"] { 
+        display: flex;
+        margin-bottom: 40px;
+    }
+    
+    .feat-1,
+    .feat-2,
+    .feat-3,
+    .feat-4 { padding: 0 0 0 6em; }
+    
+    .fribx,
+    .satbx { display: flex; }
+    
+    .schedule-bx { margin: 40px; }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .big-bx {
+        width: 100%;
+        height: 160vh;
+        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/womendriving.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .big-head {
+        position: absolute;
+        top: 59%;
+        left: 17%;
+        font-size: 4em;
+        font-weight: 300;
+    }
+}

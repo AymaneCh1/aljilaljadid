@@ -1,0 +1,276 @@
+/*  
+    Colors :  brown #e17055
+*/
+
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font: normal 100% 'Exo', sans-serif, serif;
+    background-color: #fefefe;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fefefe;
+    text-rendering: optimizeLegibility;
+}
+
+/* LAYOUT */
+
+.grid::before,
+.grid::after {
+     display: table;
+     content: "";
+     clear: both;
+ }
+
+ .grid { border: 0 }
+
+[class*='row-'] {
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+
+[class*='row-']:last-child {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+}
+
+[class*='col-'] { 
+    float: left; 
+}
+
+.col-1-2,
+.col-2-2 { width: 50%; }
+
+.col-1-4 { width: 25%; }
+
+
+section { padding: 4em 0; }
+
+
+
+/* HEADINGS */
+h1 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+
+
+
+
+
+/* ICONS */
+.mobile-nav-icon {
+    display: none;
+    color: #fefefe;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.icon-facebook {
+    font-size: 25px;
+    margin: 0 0 0 15em;
+}
+
+.icon-call {
+    font-size: 30px;
+    vertical-align: middle;
+    color: #e17055;
+}
+
+
+
+/* LOGO */
+.logo-pic {
+    width: 117px;
+    height: 117px;
+    display: block;
+    background-color: transparent;
+}
+
+.logo:link,
+.logo:visited {
+    color: #fefefe;
+    font-size: 3.125em;
+    /* padding: 25px 0 0 40px; */
+    display: block;
+    float: left;
+    width: 10%;
+    margin: 30px 0 0 30px;
+}
+
+
+
+
+
+
+/* TOP HERO */
+.container { width: 100%; }
+
+.top-box {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/road.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo:link,
+.logo:visited {
+    color: #fefefe;
+    font-size: 3.125em;
+    padding: 25px 0 0 25px;
+    display: block;
+    float: left;
+}
+
+nav {
+    float: right;
+    padding: 6.5em 10em 0 0;
+}
+
+nav ul { list-style: none; }
+
+nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+nav ul li:last-child {
+    display: inline-block;
+    margin-right: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    color: #fefefe;
+    transition: all .2s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    text-decoration: none;
+    color: #e17055;
+}
+
+
+/* figure { width: 100%; }
+
+img {
+    width: 100%;
+    display: none;
+} */
+
+[class*='picbx-'] {
+    height: 250px;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .2s;
+    padding: 0;
+    margin: 0;
+    border: 1px solid none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.picbx-1 { background-image: url(../img/1.jpg); }
+/* .picbx-1:hover { background-image: linear-gradient(rgba(225, 112, 85, .7), rgba(225, 112, 85, .7)), url(../img/1.jpg); } */
+.picbx-2 { background-image: url(../img/2.jpg); }
+.picbx-3 { background-image: url(../img/3.jpg); }
+.picbx-4 { background-image: url(../img/4.jpg); }
+.picbx-5 { background-image: url(../img/5.jpg); }
+.picbx-6 { background-image: url(../img/6.jpg); }
+.picbx-7 { background-image: url(../img/7.jpg); }
+.picbx-8 { background-image: url(../img/8.jpg); }
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(225, 112, 85, 1);
+    opacity: 0; 
+    transition: .5s ease;
+}
+
+.overlay .text {
+    color: #222;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+[class*='picbx-']:hover .text { opacity: 1; }
+[class*='picbx-']:hover .overlay { opacity: 1; }
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #222; 
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+}
+
+footer ul {
+   list-style: none;
+   margin: 0 0 0 20px;
+   float: left;
+}
+
+footer ul li {
+   display: inline-block;
+   margin-right: 10px;
+   text-transform: uppercase;
+}
+
+footer ul li:first-of-type { opacity: .7; }
+footer ul li:last-of-type a:link,
+footer ul li:last-of-type a:visited { text-decoration: none; }
+
+footer ul li a:link,
+footer ul li a:visited {
+   color: #fefefe;
+}
+
+.callbx { 
+   width: 25%;
+   margin: 0 0 0 30em;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.facebook-link:link,
+.facebook-link:visited {
+    color: #fefefe;
+    transition: all .2s;
+}
+
+.facebook-link:hover,
+.facebook-link:active { color: #3B5998; }
+

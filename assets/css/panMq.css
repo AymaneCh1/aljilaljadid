@@ -1,0 +1,157 @@
+@media only screen and (max-width: 1391px) {
+    nav { width: 40%; }
+}
+
+@media only screen and (max-width: 967px) {
+    nav { width: 50%; }
+}
+
+@media only screen and (max-width: 919px) {
+    /* h1 {
+        font-size: 90px;
+        font-weight: 100;
+        margin: 220px 0 0 0;
+    } */
+
+    .road-feats {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 600px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    nav { width: 60%; }
+}
+
+@media only screen and (max-width: 678px) {
+    nav { width: 70%; }
+}
+
+@media only screen and (max-width: 674px) {
+    .top-mainbx {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, .349)) ,url(../img/road-sign.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 150vh;
+    }
+
+    nav { width: 60%; }
+
+    .text-bx {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 700px;
+        padding: 0 40px; */
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+    nav { 
+        width: 20%;
+        display: none;
+        margin: 90px 0 0 160px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+        color: #fefefe;
+        cursor: pointer;
+        font-size: 33px;
+        margin: 30px 40px 0 0;
+    }
+
+    nav ul li {
+        text-transform: uppercase;
+        font-size: .8125em;
+        letter-spacing: 1.2px;
+        margin: 0 0 10px 0;
+    }
+
+    .col-1-2,
+    .col-2-2 { width: 100%; }
+}
+
+@media only screen and (max-width: 458px) {
+    nav { 
+        width: 40%;
+        display: none;
+        margin: 90px 0 0 100px;
+    }
+}
+
+@media only screen and (max-width: 823px) and (max-height: 411px) {
+    .top-mainbx {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, .349)) ,url(../img/road-sign.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 180vh;
+    }
+
+    .text-bx {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 700px;
+        padding: 0 40px; */
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .top-mainbx {
+        width: 120%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, .349)) ,url(../img/road-sign.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 160vh;
+    }
+
+    nav { 
+        width: 40%;
+        display: none;
+        margin: 90px 0 0 70px;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+        color: #fefefe;
+        cursor: pointer;
+        font-size: 33px;
+        margin: 30px 0  0 10px;
+    }
+}
