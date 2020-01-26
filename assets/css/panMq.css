@@ -138,9 +138,13 @@
         background-color: #222;
     }
 
-        .mobile-nav-icon {
-            margin: 0 50px 0 10px;
-        }
+    nav {
+        margin: 90px 0 0 80px;
+    }
+
+    .mobile-nav-icon {
+        margin: 0 20px 0 10px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
