@@ -26,12 +26,6 @@
     nav { width: 60%; }
 }
 
-@media only screen and (max-width: 720px) and (max-height: 1520px) {
-    .mobile-nav-icon {
-        margin: 0 0 0 30px;
-    }
-}
-
 @media only screen and (max-width: 678px) {
     nav { width: 70%; }
 }
@@ -143,6 +137,10 @@
         padding: 20px;
         background-color: #222;
     }
+
+        .mobile-nav-icon {
+            margin: 0 0 0 30px;
+        }
 }
 
 @media only screen and (max-width: 320px) {
