@@ -356,6 +356,10 @@
         color: #e17055;
         margin: 0 20px 0 0;
     }
+
+    h1 {
+        margin: 50px 0 0 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
