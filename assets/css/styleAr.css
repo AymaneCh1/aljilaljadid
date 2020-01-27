@@ -103,7 +103,26 @@ nav ul li a:active {
 
 .big-head span { color: #e17055; }
 
-.permispic { padding: 10em 0 0 3em; }
+.permispic { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)) ,url(../img/permis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, 150px);
+ }
+
+ .head-lid {
+     text-align: center;
+     transform: translate(-50%, -50%);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+ }
 
 img {
     width: 100%;
